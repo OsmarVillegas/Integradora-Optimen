@@ -1,0 +1,19 @@
+.label{
+    margin: 0; /* Establece el margen exterior en 0 */
+    padding: 0; /* Establece el relleno interior en 0 */
+    width: 0; /* Establece la anchura en 0 */
+    height: 0; /* Establece la altura en 0 */
+}
+
+.modal-titulo{
+    margin-left: 6em; /* Establece el margen izquierdo en 6em */
+}
+
+/* Cuando el ancho de la pantalla llega a 1200 cambia el estilo de las siguientes clases */
+@media (max-width:1200px) {
+    .modal-titulo{
+        font-size: 1.5em; /* Establece el tamaño de la fuente en 1.5em */
+        margin-left: 8em; /* Establece el margen izquierdo en 6em */
+    }
+}
+

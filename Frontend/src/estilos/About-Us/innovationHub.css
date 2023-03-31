@@ -1,0 +1,124 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+.InnovationHub-contenido {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222; /* color de fondo negro */
+}
+
+.InnovationHub-cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; /* disposición de los elementos en filas */
+}
+
+.InnovationHub-titulo {
+    text-align: center; /* alineación del texto al centro */
+    margin: 1em; /* margen exterior de 1em */
+}
+
+.innovationHub-titulo-text {
+    margin-top: 1em; /* margen superior de 1em */
+    color: white; /* color del texto blanco */
+    font-size: 2.5em; /* tamaño de fuente 2.5em */
+    font-weight: bold; /* negrita */
+}
+
+/* Estilos para las etiquetas de formulario */
+label {
+	perspective: 1000px; /* Establece la perspectiva de transformación 3D */
+	transform-style: preserve-3d; /* Establece cómo se deben aplicar las transformaciones a los elementos secundarios */
+	cursor: pointer; /* Cambia el cursor del mouse cuando se pasa sobre el elemento */
+	width: 280px; /* Establece el ancho del elemento */
+	height: 350px; /* Establece la altura del elemento */
+	margin: 0 1em; /* Establece el margen del elemento */
+	padding: 1em; /* Establece el relleno del elemento */
+}
+
+/* Estilos para las tarjetas con efecto de volteo */
+.flip-card {
+	position: relative; /* Establece la posición del elemento */
+	width: 20em; /* Establece el ancho del elemento */
+	height: 20em; /* Establece la altura del elemento */
+	transform-style: preserve-3d; /* Establece cómo se deben aplicar las transformaciones a los elementos secundarios */
+	transition: all 0.5s ease-in-out; /* Establece la duración y la función de tiempo de una transición */
+	z-index: 1; /* Establece el índice de apilamiento del elemento */
+}
+
+/* Estilos para el frente y la parte posterior de las tarjetas */
+.flip-card .InnovationHub-front-1,
+.flip-card .InnovationHub-front-2,
+.flip-card .InnovationHub-front-3,
+.flip-card .InnovationHub-front-4,
+.flip-card .InnovationHub-front-5,
+.flip-card .InnovationHub-back-1,
+.flip-card .InnovationHub-back-2,
+.flip-card .InnovationHub-back-3,
+.flip-card .InnovationHub-back-4,
+.flip-card .InnovationHub-back-5 {
+	position: absolute; /* Establece la posición del elemento */
+	width: 100%; /* Establece el ancho del elemento */
+	height: 100%; /* Establece la altura del elemento */
+	display: flex; /* Establece el modo de visualización del elemento como un contenedor flexible */
+	flex-wrap: wrap; /* Establece cómo se deben envolver los elementos secundarios dentro del elemento flexible */
+	align-items: center; /* Establece la alineación de los elementos secundarios en el eje transversal */
+	justify-content: space-between; /* Establece la distribución de espacio entre los elementos secundarios */
+	text-align: center; /* Establece la alineación de texto dentro del elemento */
+	flex-direction: column; /* Establece la dirección de los elementos secundarios dentro del elemento flexible */
+	backface-visibility: hidden; /* Establece si la parte posterior de un elemento debe ser visible cuando se voltea */
+	color: white; /* Establece el color del texto */
+}
+
+/* Estilos para la imagen de fondo en los elementos de tarjeta */
+.InnovationHub-img {
+    position: absolute; /* posición absoluta */
+    z-index: -10; /* profundidad */
+    width: 100%; /* ancho */
+    height: 100%; /* alto */
+    filter: brightness(60%); /* filtro de brillo */
+    overflow: hidden; /* ocultar elementos que sobresalen */
+    object-fit: cover; /* ajuste del tamaño de la imagen */
+    background-repeat: no-repeat; /* no repetir la imagen */
+    background-size: 100% 100%; /* tamaño de la imagen */
+}
+
+/* Estilos para el contenido de la parte trasera de las tarjetas */
+.flip-card .InnovationHub-back-1, .flip-card .InnovationHub-back-2, .flip-card .InnovationHub-back-3, .flip-card .InnovationHub-back-4, .flip-card .InnovationHub-back-5{
+    transform: rotateX(180deg); /* rotación */
+    color: #000; /* color de texto */
+    background: rgba(60, 100, 100, 0.9); /* color de fondo */
+    color: white; /* color de texto */
+    padding: 1em; /* espacio interno */
+}
+
+/* Estilos para la animación de la tarjeta al hacer hover sobre el label */
+label:hover .flip-card {
+    transform: rotateX(2deg); /* rotación */
+    box-shadow: 0 20px 20px rgba(50, 60, 60, 0.2); /* sombra */
+}
+
+/* Estilos para los inputs */
+input {
+    display: none; /* no mostrar */
+}
+
+:checked + .flip-card {
+    transform: rotateX(180deg); /* rota el elemento 180 grados sobre el eje X */
+}
+
+label:hover :checked + .flip-card {
+    transform: rotateX(175deg); /* rota el elemento 175 grados sobre el eje X cuando el cursor está sobre el label */
+    box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2); /* agrega una sombra al elemento */
+}
+
+.InnovationHub-fecha {
+    color: rgb(189, 189, 189); /* cambia el color del texto */
+}
+
+.InnovationHub-cuadro-titulo {
+    font-weight: bold; /* cambia el grosor de la fuente */
+}

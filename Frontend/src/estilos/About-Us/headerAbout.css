@@ -1,0 +1,46 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Estilo del contenedor del header de la página About */
+.HeaderAbout-Contenedor {
+    position: relative;
+    height: 85vh;
+    background-image: url(../../imagenes/cabeza/about.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Estilo del item dentro del contenedor */
+.HeaderAbout-item {
+    height: 83vh;
+    width: 100vw;
+}
+
+/* Estilo del título y subtítulo dentro del header */
+.HeaderAbout-caption {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* Posición del título y subtítulo con respecto al borde superior, derecho, inferior e izquierdo */
+    inset: 18% auto auto 10%;
+}
+
+/* Estilo del título */
+.HeaderAbout-Titulo {
+    font-size: 6.5em;
+    margin-right: 50%;
+    text-align: start;
+}
+
+.HeaderAbout-texto {
+    text-align: start;  /*Alinea el texto a la izquierda*/
+    max-width: 29vw;  /*Establece el ancho máximo del elemento*/
+    margin-top: 1em;  /*Establece el margen superior del elemento*/
+    font-size: 1.2em;  /*Establece el tamaño de fuente del texto*/
+}
+
+.HeaderAbout-caption li {
+    font-size: 1.2em;  /*Establece el tamaño de fuente del elemento de lista*/
+    margin-top: 0.5em;  /*Establece el margen superior del elemento de lista*/
+}

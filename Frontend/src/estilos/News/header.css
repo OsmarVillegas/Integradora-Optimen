@@ -1,0 +1,53 @@
+/* Establece un relleno y margen cero para todos los elementos del documento */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Establece algunas propiedades de visualización, alineación y tipografía para el encabezado (Header) */
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: "Monserrat", sans-serif;
+}
+
+/* Establece algunas propiedades de visualización y alineación para el contenido del encabezado */
+.header-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100px; /* Establece aquí la altura mínima deseada */
+}
+
+/* Establece algunas propiedades de estilo para el título del encabezado */
+.header-titulo {
+  font-weight: bold;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 5em;
+  text-align: end;
+}
+
+/* Establece algunas propiedades de estilo para la imagen del encabezado */
+.header-image {
+  width: 100vw;
+  height: 80vh;
+  min-height: 80vh;
+  object-fit: cover;
+}
+
+/* Establece un margen inferior y algunas propiedades de visualización y alineación para el contenedor principal */
+.contenedor-principal {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Autor: Mario Alberto Rangel Márquez*/

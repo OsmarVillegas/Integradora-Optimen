@@ -1,0 +1,98 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+.services-contenido {
+  /* Añade un padding de 2.5em al contenido */
+  padding: 2.5em;
+  /* Establece la posición relativa para que los elementos internos sean posicionados relativos a este elemento */
+  position: relative;
+
+  /* Establece el color de fondo del contenido a #3D64E3 */
+  background-color: #3d64e3;
+
+  /* Centra el texto dentro del elemento */
+  text-align: center;
+}
+
+.services-titulo {
+  /* Añade un margen inferior de 0.8em al título */
+  margin-bottom: 0.8em;
+
+  /* Establece el tamaño de fuente del título a 4em */
+  font-size: 4em;
+
+  /* Establece el peso de fuente del título a negrita */
+  font-weight: bold;
+
+  /* Establece el color de fuente del título a blanco */
+  color: white;
+}
+.services-servicio {
+  /* Establece el color de fondo del servicio a blanco */
+  background-color: white;
+
+  /* Establece el radio de borde del servicio a un 5% */
+  border-radius: 5%;
+
+  /* Establece la altura mínima del servicio a 12.2em */
+  min-height: 12.2em;
+
+  /* Establece la anchura mínima del servicio a 12.2em */
+  min-width: 12.2em;
+
+  /* Añade un margen de 1.5em al servicio */
+  margin: 1.5em;
+
+  /* Establece el elemento como un contenedor flexible */
+  display: flex;
+
+  /* Establece la dirección de flexión a columna */
+  flex-direction: column;
+
+  /* Establece la alineación vertical de los elementos internos a centrado */
+  justify-content: center;
+
+  /* Establece la alineación horizontal de los elementos internos a centrado */
+  align-items: center;
+
+  /* Permite que los elementos internos se ajusten automáticamente en varias líneas si es necesario */
+  flex-wrap: wrap;
+
+  /* Añade una sombra de caja al servicio */
+  box-shadow: 19px 20px 23px -9px rgba(0, 0, 0, 0.92);
+
+  /* Añade una sombra de caja al servicio para navegadores webkit */
+  -webkit-box-shadow: 19px 20px 23px -9px rgba(0, 0, 0, 0.92);
+
+  /* Añade una sombra de caja al servicio para navegadores Mozilla */
+  -moz-box-shadow: 19px 20px 23px -9px rgba(0, 0, 0, 0.92);
+}
+
+.services-servicio-imagen {
+  /* Añade un margen inferior de 0.5em a la imagen del servicio */
+  margin-bottom: 0.5em;
+
+  /* Establece el ancho de la imagen del servicio al 50% del contenedor */
+  width: 50%;
+
+  /* Establece la altura de la imagen del servicio en automático */
+  height: auto;
+}
+
+.contenido {
+  /* Establece la posición del contenido como relativa */
+  position: relative;
+
+  /* Establece el contenido como un contenedor flexible */
+  display: flex;
+
+  /* Permite que los elementos internos se ajusten automáticamente en varias líneas si es necesario */
+  flex-wrap: wrap;
+
+  /* Establece la alineación vertical de los elementos internos a centrado */
+  align-items: center;
+
+  /* Establece la alineación horizontal de los elementos internos a centrado */
+  justify-items: center;
+}

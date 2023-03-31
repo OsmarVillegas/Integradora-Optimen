@@ -1,0 +1,51 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Define el contenedor de los premios y certificaciones */
+.awardsAndCertifications-contenido {
+    height: auto;
+    background-color: #3D64E3; /* Define el color de fondo */
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Establece la dirección del contenido como vertical */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan a medida que cambia el tamaño de la pantalla */
+    text-align: center; /* Centra el texto en el contenedor */
+}
+
+/* Define el estilo del título de la sección */
+.awardsAndCertifications-titulo {
+    position: relative; /* Permite posicionar otros elementos relativos a este título */
+    color: white; /* Define el color del texto */
+    margin: 1em; /* Agrega un margen alrededor del título */
+}
+
+/* Define el estilo de cada premio o certificación */
+.awardsAndCertifications-award {
+    margin: 1.8em; /* Agrega un margen entre los elementos */
+}
+
+/* Define el contenedor de los premios y certificaciones */
+.awardsAndCertifications-awards {
+    display: flex; /* Crea un contenedor flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan a medida que cambia el tamaño de la pantalla */
+    margin-bottom: 2.5em; /* Agrega un margen inferior al contenedor */
+}
+
+/* Estilos para las imágenes de premios y certificaciones */
+.awardsAndCertifications-img {
+    height: 6em;
+    width: auto;
+    filter: grayscale(100%); /* Aplica un filtro de escala de grises al 100% */
+    transition: 0.5s; /* Establece una transición de 0.5 segundos para cambios de estilo */
+}
+
+/* Estilos cuando el cursor está sobre la imagen */
+.awardsAndCertifications-img:hover {
+    transform: scale(1.1); /* Hace que la imagen aumente su tamaño en un 10% */
+    filter: grayscale(0%); /* Elimina el filtro de escala de grises */
+}

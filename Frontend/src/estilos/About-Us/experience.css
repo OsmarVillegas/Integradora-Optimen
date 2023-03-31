@@ -1,0 +1,139 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+.Experience-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222222;  /* Establece el color de fondo del contenedor */
+    color: white;  /* Establece el color de texto */
+    flex-direction: column;  /* Establece la dirección de los elementos hijos */
+}
+
+.Experience-cuadro {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;  /* Distribuye el espacio entre los elementos hijo */
+    flex-wrap: wrap;  /* Permite que los elementos hijo se ajusten al contenedor */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1%;  /* Establece un margen inferior */
+}
+
+.Experience-AirlineExp {
+    margin: 0.5em 0;  /* Establece un margen superior e inferior */
+}
+
+#Experience-experiencia-1, #Experience-experiencia-2, #Experience-experiencia-3 {
+    position: relative;  /* Establece la posición de los elementos */
+    height: 29em;  /* Establece la altura */
+    width: 19em;  /* Establece el ancho */
+    margin: 0.5em;  /* Establece el margen */
+}
+
+#Experience-experiencia-1:hover, #Experience-experiencia-2:hover, #Experience-experiencia-3:hover {
+    filter: contrast(150%);  /* Establece el contraste de la imagen al hacer hover */
+    filter: grayscale(110%);  /* Establece el efecto de escala de grises de la imagen al hacer hover */
+    transition: 1s;  /* Establece la velocidad de transición al hacer hover */
+    position: relative;  /* Establece la posición de los elementos al hacer hover */
+}
+/* Estilos para el título de la experiencia */
+.Experience-titulo {
+    position: absolute; /* Define la posición del título como absoluta */
+    font-size: 1.5em; /* Define el tamaño de la fuente del título */
+    inset: 88% 0 0 0; /* Define la posición del título con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+    transition: inset .3s .3s ease-out; /* Define la transición que se aplicará al cambiar la posición del título */
+}
+
+/* Estilos para la línea debajo del título */
+.Experience-titulo::before {
+    content: ""; /* Agrega contenido al antes del elemento */
+    position: absolute; /* Define la posición del elemento como absoluta */
+    background-color: white; /* Define el color de fondo del elemento */
+    right: 10%; /* Define la posición del elemento con respecto al borde derecho del contenedor */
+    bottom: 2%; /* Define la posición del elemento con respecto al borde inferior del contenedor */
+    height: 0.5%; /* Define la altura del elemento */
+    width: 80%; /* Define el ancho del elemento */
+    margin-bottom: 0.5em; /* Define la distancia entre el elemento y el título */
+    transition: inset .3s ease-out; /* Define la transición que se aplicará al cambiar la posición del elemento */
+}
+
+/* Estilos para las tarjetas de experiencia */
+#Experience-experiencia-1:hover .Experience-titulo {
+    position: absolute; /* Define la posición del título como absoluta */
+    inset: 45px; /* Define la nueva posición del título con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+    transition: inset .3s ease-out; /* Define la transición que se aplicará al cambiar la posición del título */
+}
+
+/* Estilos para la línea debajo del título en la tarjeta 1 */
+#Experience-experiencia-1:hover .Experience-titulo::before {
+    position: absolute; /* Define la posición del elemento como absoluta */
+    inset: 30px 15px; /* Define la nueva posición del elemento con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+    transition: inset .3s ease-out; /* Define la transición que se aplicará al cambiar la posición del elemento */
+}
+
+/* Estilos para las tarjetas de experiencia */
+#Experience-experiencia-2:hover .Experience-titulo {
+    position: absolute; /* Define la posición del título como absoluta */
+    inset: 45px; /* Define la nueva posición del título con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+}
+
+/* Estilos para la línea debajo del título en la tarjeta 2 */
+#Experience-experiencia-2:hover .Experience-titulo::before {
+    position: absolute; /* Define la posición del elemento como absoluta */
+    inset: 30px 15px; /* Define la nueva posición del elemento con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+}
+
+/* Estilos para las tarjetas de experiencia */
+#Experience-experiencia-3:hover .Experience-titulo {
+    position: absolute; /* Define la posición del título como absoluta */
+    inset: 45px; /* Define la nueva posición del título con respecto a los bordes superior, derecho, inferior e izquierdo del contenedor */
+}
+#Experience-experiencia-3:hover .Experience-titulo::before {
+    position: absolute;   /* Define la posición del elemento en relación a su contenedor padre */
+    inset: 30px 15px;     /* Define el desplazamiento del elemento desde sus bordes superior e izquierdo */
+}
+
+.Experience-descripcion {
+    position: absolute;   /* Define la posición del elemento en relación a su contenedor padre */
+    inset: 100px 10px 0 10px;  /* Define el desplazamiento del elemento desde sus bordes superior, derecho, inferior e izquierdo */
+    font-weight: 100;     /* Define el grosor de la fuente */
+    font-size: 1em;       /* Define el tamaño de la fuente */
+    opacity: 0;           /* Define la opacidad del elemento */
+    transition: opacity .3s ease-out;   /* Define la duración y la función de transición del cambio de opacidad */
+}
+
+.Experience-descripcion:hover {
+    position: absolute;   /* Define la posición del elemento en relación a su contenedor padre */
+    inset: 100px 10px 0 10px;  /* Define el desplazamiento del elemento desde sus bordes superior, derecho, inferior e izquierdo */
+    font-weight: 100;     /* Define el grosor de la fuente */
+    font-size: 0.9em;     /* Define el tamaño de la fuente */
+    opacity: 1;           /* Define la opacidad del elemento */
+    transition: opacity .5s .6s ease-in;  /* Define la duración y la función de transición del cambio de opacidad */
+}
+
+
+#Experience-experiencia-1 {
+    background-image: url("../../imagenes/experiencia/image1.jpg");   /* Define la imagen de fondo del elemento */
+    background-position: center;  /* Define la posición de la imagen de fondo */
+    background-size: 100% 100%;   /* Define el tamaño de la imagen de fondo */
+}
+
+#Experience-experiencia-2 {
+    background-image: url("../../imagenes/experiencia/image2.jpg");   /* Define la imagen de fondo del elemento */
+    background-position: center;  /* Define la posición de la imagen de fondo */
+    background-size: 100% 100%;   /* Define el tamaño de la imagen de fondo */
+}
+
+#Experience-experiencia-3 {
+    background-image: url("../../imagenes/experiencia/image3.jpg");   /* Define la imagen de fondo del elemento */
+    background-position: center;  /* Define la posición de la imagen de fondo */
+    background-size: 100% 100%;   /* Define el tamaño de la imagen de fondo */
+}
+
+.Experience-linea {
+    border: solid white 1px;  /* Define el borde del elemento */
+    color: white;             /* Define el color del texto del elemento */
+}

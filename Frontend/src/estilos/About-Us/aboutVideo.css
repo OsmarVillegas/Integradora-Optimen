@@ -1,0 +1,25 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Define un contenedor para el video de la sección "Acerca de" */
+.AboutVideo-contenedor {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+}
+
+/* Cuando llega a un maximo 500px el formato de las siguientes clases cambia */
+
+@media (max-width: 500px) {
+  /* Define un contenedor para el video de la sección "Acerca de" */
+  .AboutVideo-contenedor {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22em;
+  }
+}

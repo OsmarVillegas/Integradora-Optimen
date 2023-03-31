@@ -1,0 +1,63 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Contenedor de la sección de colaboradores */
+.colaboradores-contenido {
+  background-color: #ffffff; /* Fondo blanco */
+  position: relative;
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center;
+  align-items: center;
+  padding: 2% 10%; /* Padding del 2% en la parte superior e inferior, 10% en los lados */
+}
+
+/* Contenedor para los colaboradores */
+.colaboradores-grupo {
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  flex-wrap: wrap; /* Envuelve los elementos si no caben en una sola línea */
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+/* Configuración de la imagen de cada colaborador */
+.colaboradores-colab {
+  filter: grayscale(100%); /* Escala de grises al 100% */
+  margin: 2em; /* Agrega margen de 2em */
+  transition: 0.5s; /* Transición de 0.5 segundos para crear efecto al pasar el cursor sobre la imagen */
+}
+
+/* Estilos para cuando se hace hover sobre cada colaborador */
+.colaboradores-colab:hover {
+  filter: grayscale(0%);
+  margin: 2em;
+  transform: scale(1.1);
+}
+
+/* Estilos para las imágenes de los colaboradores */
+.colaboradores-img {
+  width: 8em;
+  height: auto;
+}
+
+/* Estilos para el título de cada colaborador */
+.colaboradores-titulo {
+  color: #00239c;
+  font-weight: bold;
+}
+
+/* Cuando la pantalla llega a un maximo de 1500px se cambian los siguientes clases */
+@media (max-width: 1500px) {
+  /*Este código establece un estilo para un contenedor de colaboradores. 
+  Se establece que el contenedor tenga un display de bloque, un ajuste de envoltura flexible, 
+  y que los elementos se alineen y justifiquen en el centro. Además, se establece que el contenido 
+  dentro del contenedor se organice en una sola columna.*/
+  .colaboradores-contenido {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

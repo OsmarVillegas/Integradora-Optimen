@@ -1,0 +1,84 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Importa una fuente de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+
+/* Estilo para el título de la sección */
+.AWorldGlobal-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+  color: #00239c;
+  text-align: center;
+}
+
+/* Estilo para el contenedor de capacidades */
+.AWorldGlobal-contenedor-capabilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+  margin-bottom: 0;
+  margin-top: 1em;
+  font-weight: bolder;
+  background-color: white;
+}
+
+/* Estilo para el texto "capabilities" */
+.AWorldGlobal-t {
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+/* Estilo para la imagen de fondo */
+#capabilitie {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background: url("../../imagenes/cabeza/fondo.jpg");
+  background-size: cover;
+  max-width: 45%;
+}
+
+/* Estilo para el efecto de superposición de texto en la imagen de fondo */
+#capabilitie::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../imagenes//capabilities/Palabras_min.png");
+  background-size: 100% 100%;
+  background-position: center;
+  mix-blend-mode: screen;
+}
+
+/* En el caso de que la anchura de la pantalla legue a 700px o inferior, se modificara las siguientes clases. */
+@media (max-width: 700px) {
+  #capabilitie {
+    /* establecemos la altura del elemento a 60% del viewport */
+    height: 60vh;
+    /* establecemos el ancho del elemento al 100% del ancho de su contenedor */
+    width: 100%;
+    /* establecemos el ancho máximo del elemento a 60% del ancho de su contenedor */
+    max-width: 60%;
+  }
+}
+
+/* En el caso de que la anchura de la pantalla legue a 500px o inferior, se modificara las siguientes clases. */
+@media (max-width: 500px) {
+  #capabilitie {
+    /* establecemos la altura del elemento a 60% del viewport */
+    height: 60vh;
+    /* establecemos el ancho del elemento al 100% del ancho de su contenedor */
+    width: 100%;
+    /* establecemos el ancho máximo del elemento a 100% del ancho de su contenedor */
+    max-width: 100%;
+  }
+}
