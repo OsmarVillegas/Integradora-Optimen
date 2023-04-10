@@ -10,11 +10,12 @@ import "../../estilos/Home/NewsAndUpdate.css";
 import "../../estilos/Home/colaboradores.css";
 import "../../estilos/Home/AWorldGlobal.css";
 import "../../estilos/Home/awardsAndCertifications.css";
+import { Link } from "react-router-dom";
 
 import colab from "../../base-de-datos/colaboradores.json";
-import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import axios from "axios";
+import { useFetch } from "../Back/useFetch";
 
 // Genera el primer elemento de la página home, genera una imagen con información que se le sobrepone.
 export function Header() {
@@ -230,13 +231,8 @@ export function AWorldGlobal() {
 export function NewsAndUpdates() {
   const [noticias, setNoticias] = useState([]);
 
-  useEffect(() => {
-    const getNoticias = async () => {
-      const response = await axios.get("http://localhost:4000/api/noticias");
-      setNoticias(response.data);
-    };
-    getNoticias();
-  }, []);
+  const { data } = useFetch("/api/noticias");
+
   return (
     <div className="div-titulo">
       {/* titulo */}
@@ -246,17 +242,29 @@ export function NewsAndUpdates() {
 
       {/* noticias */}
       <div className="newsAndUpdate-contenido">
-        {noticias.map((noticia) => (
-          <div key={noticia.id} className="newsAndUpdate-noticias-1 col-2">
+        {data.map((noticia) => (
+          <div
+            key={noticia.id}
+            className="newsAndUpdate-noticias col-2"
+            style={{ backgroundImage: `url(${noticia.img})` }}
+          >
             <div className="tarjeta">
               <h3 className="newsAndUpdate-titulo-noticia">
-                {noticia.nameNoticias}
+                {noticia.nameNoticiasEsp}
               </h3>
-              <p className="newsAndUpdate-fecha">{noticia.fechCreacion}</p>
+              <p className="newsAndUpdate-fecha">
+                {new Date(noticia.createdAt).toDateString()}
+              </p>
               <p className="newsAndUpdate-texto">{noticia.contenidoEsp}</p>
             </div>
           </div>
         ))}
+
+        <button className="boton col-1">
+          <Link to="/News" className="news-boton">
+            Learn more
+          </Link>
+        </button>
       </div>
     </div>
   );

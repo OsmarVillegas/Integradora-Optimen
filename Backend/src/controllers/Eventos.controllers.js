@@ -1,13 +1,11 @@
 import Eventos from '../models/Eventos';
 
-
-
 export const findAllEventos = async(req,res)=>{
      try {
         const eventos = await Eventos.find()
         res.json(eventos);
      } catch (error) {
-        res.status(500).json({message: error.message||'ocurrio un error al deovolver los eventos'})
+        res.status(500).json({message: error.message||'ocurrio un error al devolver los eventos'})
      }
 }
 

@@ -3,14 +3,16 @@
 */
 
 /* Importa los componentes que se utilizaran para la vista de la pantalla Eventos y Noticias del creador lider */
-import React from "react";
-import {NoticiasForm, EventosForm} from "../componentes/Back/NewForm";
+import React from "react"
+import {NoticiasForm, EventosForm} from "../../componentes/Back/NewForm";
+import {HeaderAdmin} from "../../componentes/VistaAdmin/Reusable/Header"
 
 /* Se imprime el contenido de la pantalla Eventos y Noticias del creador lider, ordena la presentación de los elementos*/
-class NoticiasYEventos extends React.Component {
+class NoticiasYEventosCreador extends React.Component {
     render(){
         return (
             <div className="NoticiasYEventos">
+                <HeaderAdmin signOut={false} link="/Creador/Vista" titulo="Vista Administrador" />
                 <NoticiasForm />
                 <EventosForm />
             </div>
@@ -18,4 +20,4 @@ class NoticiasYEventos extends React.Component {
     }
 }
 
-export default NoticiasYEventos;
+export default NoticiasYEventosCreador;

@@ -1,31 +1,36 @@
-import express  from 'express';
-import cors from 'cors';
-import morgan from 'morgan';
-import NoticiasRoutes from './routes/noticias.routes';
-import EventosRoutes from './routes/eventos.routes';
+import express from "express";
+import morgan from "morgan";
+import pkg from '../package.json'
 
+import {createRoles} from './lib/initialSetup'
 
+import productsRoutes from './routes/products.routes'
+import authRoutes from './routes/auth.routes.js'
+import userRoutes from './routes/user.routes'
+import eventosRoutes from './routes/eventos.routes'
+import noticiasRoutes from './routes/noticias.routes'
 
-const app=express();
-//settings
-app.set('port', process.env.PORT || 4000);
+const app = express()
+createRoles();
 
-//middelware
-app.use(morgan('dev'));
+app.set('pkg', pkg)
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: false}));
+app.use(morgan('dev'));
 
-// Configuración de CORS
-app.use(cors());
-//rutas
-app.get('/', (req, res)=>{
-    res.json({message:'hello world'})
+app.get('/', (req, res) => {
+    res.json({
+        name: app.get('pkg').name,
+        author: app.get('pkg').author,
+        description: app.get('pkg').description,
+        version: app.get('pkg').version
+    })
+})
 
-});
-
-app.use('/api/noticias', NoticiasRoutes);
-app.use('/api/eventos', EventosRoutes);
-
-
+app.use('/api/products',productsRoutes)
+app.use('/api/auth',authRoutes)
+app.use('/api/users',userRoutes)
+app.use('/api/eventos',eventosRoutes)
+app.use('/api/noticias',noticiasRoutes)
 
 export default app;

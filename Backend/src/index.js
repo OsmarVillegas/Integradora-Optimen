@@ -1,5 +1,6 @@
-import app from './app';
+import app from "./app";
 import './database';
 
-app.listen(app.get('port'));              
-console.log('Server on port',app.get('port'));
+app.listen(4000);
+console.log('Server listen on port', 4000);
+

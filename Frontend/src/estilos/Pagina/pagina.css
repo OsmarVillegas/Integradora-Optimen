@@ -1,0 +1,44 @@
+.PaginaVista-Contenido-Imagen {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.PaginaVista-Imagen {
+    width: 50vw;
+    height: auto;
+}
+
+.PaginaVista-Contenido {
+    margin: 2em 5em;
+}
+
+.PaginaVista-Contenido-fecha {
+    font-size: 0.8;
+    font-weight: 600;
+    color: rgb(131, 131, 131);
+}
+
+.PaginaVista-Contenido-nameNoticia {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(21, 94, 190);
+}
+
+.PaginaVista-Contenido-contenido {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.PaginaVista-Contenido-texto {
+    margin-left: 1em;
+}
+
+@media (max-width: 900px) {
+    .PaginaVista-Imagen {
+        width: 100vw;
+        height: auto;
+    }
+}

@@ -1,7 +1,6 @@
 import Noticias from '../models/Noticias';
 
 
-
 export const findAllNoticias= async(req,res)=>{
      try {
         const noticias = await Noticias.find()
@@ -12,8 +11,8 @@ export const findAllNoticias= async(req,res)=>{
 }
 
 
-export const  createNoticias= async(req,res)=>{
-    if(!req.body.nameNoticiasEsp){   
+export const createNoticias= async(req,res)=>{
+    if(!req.body.nameNoticiasEsp){
         return res.status(400).json({message: 'Nombre de la noticia requerido'})
      }
     try {

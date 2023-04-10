@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react"; // Importación de los hook
 import "../../estilos/Home/headerAndNavbar.css"; // Importación del archivo CSS que contiene los estilos del componente
 import { Link } from "react-router-dom"; // Importación del componente Link de react-router-dom para manejar la navegación entre páginas
 import { langContext } from '../../context/langContext' // Importación del contexto langContext que contiene el estado del lenguaje seleccionado
-import es from '../../imagenes/spain.png'; // Importación de la imagen de la bandera de España
-import en from '../../imagenes/united-kingdom.png'; // Importación de la imagen de la bandera del Reino Unido
 import { FormattedMessage } from "react-intl"; // Importación del componente FormattedMessage de la librería react-intl
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 // Definición del componente Navbar
 export function Navbar() {
@@ -102,6 +103,7 @@ export function Footer() {
     setMostrarBotones(!mostrarBotones);
   };
 
+
   return (
     <footer>
       <p1>Optimen</p1>
@@ -116,10 +118,10 @@ export function Footer() {
       {/* Botones desplegables */}
       {mostrarBotones && (
         <div className="botones-desplegables">
-          <button onClick={() => idioma.establecerLenguaje("es-MX")}>
+          <button onClick={() => {idioma.establecerLenguaje("es-MX");}}>
             <span className="tras">es</span>
           </button>
-          <button onClick={() => idioma.establecerLenguaje("en-US")}>
+          <button onClick={() => {idioma.establecerLenguaje("en-US");}}>
             <span className="tras">en</span>
           </button>
         </div>

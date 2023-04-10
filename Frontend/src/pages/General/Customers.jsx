@@ -4,9 +4,9 @@
 
 /* Importa los componentes que se utilizaran para la vista de la pantalla Customers*/
 import React from "react";
-import "../estilos/Customers/customers1.css";
-import { Customers2, Customers3 } from "../componentes/Customers/customers2";
-import { Navbar, Footer} from '../componentes/Home/headerAndNavbar';
+import "../../estilos/Customers/customers1.css";
+import { Customers2, Customers3 } from "../../componentes/Customers/customers2";
+import { Navbar, Footer} from '../../componentes/Home/headerAndNavbar';
 
 /* Se imprime el contenido de la pantalla Customers y se ordena la presentación de los elementos*/
 class Customers extends React.Component {
@@ -18,7 +18,7 @@ class Customers extends React.Component {
 
         <img
           className="header-img col-12"
-          src={require("../imagenes/optimenv.png")}
+          src={require("../../imagenes/optimenv.png")}
           alt="Imagen principal de un avión"
         />
         <div className="uno">

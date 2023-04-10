@@ -45,7 +45,7 @@ a {
   align-items: center;
   justify-content: space-around;  
   gap: 7rem;
-
+  z-index: 1000;
 }
 .nav__toggler {
   display: none;
@@ -183,6 +183,9 @@ footer p{
   font-size: 12;
   font-weight: bold;
   color: black;
+  box-shadow: 5px 6px 5px -1px rgba(0,0,0,0.14);
+  -webkit-box-shadow: 5px 6px 5px -1px rgba(0,0,0,0.14);
+  -moz-box-shadow: 5px 6px 5px -1px rgba(0,0,0,0.14);
 }
 
 .botones-desplegables button img {

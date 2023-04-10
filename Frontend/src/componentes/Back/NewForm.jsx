@@ -9,16 +9,28 @@ Esta página contiene los compontes del backend que generan los formulario y per
   useFetch es un apartado que generamos para consumir la api
   Modal Es un componente de bootstrap que nos ayuda a generar los modals que utilizaremos
 */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import { useFetch } from "./useFetch";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "../../estilos/Back/back.css";
 import Form from "react-bootstrap/Form";
+import Cookies from "universal-cookie";
+
+const cookies = new Cookies();
 
 //Esta función genera una vista y un formulario que permite manipular la información de Noticias
 export function NoticiasForm() {
+
+  useEffect(() => {
+    if (cookies.get("token").length < 0) {
+      console.log(cookies.get("token").length)
+      window.location.href = "/login";
+    }
+  }, []);
+
+
   // Realiza la petición al servidor con la función importada
   const { data } = useFetch("/api/noticias");
 
@@ -50,6 +62,7 @@ export function NoticiasForm() {
       body: JSON.stringify(formValues),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
+        "x-access-token": cookies.get("token"),
       },
     })
       .then((response) => response.json())
@@ -64,9 +77,12 @@ export function NoticiasForm() {
 
   // Permite eliminar un objeto de la base de datos utilizando el metodo DELETE, para ello utiliza la id que se obtine al momento de seleccionar el elemento a eliminar
   const componentDidMount = (id) => {
-    fetch("/api/noticias/" + id, { method: "DELETE" }).then(() =>
-      this.setState({ status: "Delete successful" })
-    );
+    fetch("/api/noticias/" + id, {
+      method: "DELETE",
+      headers: {
+        "x-access-token": cookies.get("token"),
+      },
+    }).then(() => this.setState({ status: "Delete successful" }));
     window.location.reload();
   };
 
@@ -74,7 +90,10 @@ export function NoticiasForm() {
     // Simple PUT request with a JSON body using fetch
     const requestOptions = {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "x-access-token": cookies.get("token"),
+      },
       body: JSON.stringify(formValues),
     };
     fetch("/api/noticias/" + formValues._id, requestOptions).then((response) =>
@@ -101,7 +120,7 @@ export function NoticiasForm() {
 
   return (
     <div className="container mt-5 position-relative">
-      <h1 className="text-center">Vista Creador Noticias</h1>
+      <h1 className="text-center">Noticias</h1>
 
       {/* Tabla que presenta la información obtenida de la base de datos */}
 
@@ -162,7 +181,11 @@ export function NoticiasForm() {
 
       <button
         className="btn btn-success position-absolute end-0"
-        onClick={() => { showModal(); setEdit(false); setFormValues({form:null})}}
+        onClick={() => {
+          showModal();
+          setEdit(false);
+          setFormValues({ form: null });
+        }}
       >
         Agregar
       </button>
@@ -265,6 +288,7 @@ export function NoticiasForm() {
               }));
             }}
           />
+
           <br />
           <label htmlFor="visibilidad" className="label">
             Visibilidad
@@ -397,6 +421,7 @@ export function EventosForm() {
       body: JSON.stringify(formValues),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
+        "x-access-token": cookies.get("token"),
       },
     })
       .then((response) => response.json())
@@ -406,14 +431,17 @@ export function EventosForm() {
   // Permite mostrar el modal que contiene el formulario, para ello actualiza el valor enviandose a si mismo el valor contrario en el momento de ejecutarse
   const showModal = () => {
     setModal(!modal);
-    console.log(formValues)
+    console.log(formValues);
   };
 
   // Permite eliminar un objeto de la base de datos utilizando el metodo DELETE, para ello utiliza la id que se obtine al momento de seleccionar el elemento a eliminar
   const componentDidMount = (id) => {
-    fetch("/api/eventos/" + id, { method: "DELETE" }).then(() =>
-      this.setState({ status: "Delete successful" })
-    );
+    fetch("/api/eventos/" + id, {
+      method: "DELETE",
+      headers: {
+        "x-access-token": cookies.get("token"),
+      },
+    }).then(() => this.setState({ status: "Delete successful" }));
     window.location.reload();
   };
 
@@ -421,7 +449,10 @@ export function EventosForm() {
     // Simple PUT request with a JSON body using fetch
     const requestOptions = {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "x-access-token": cookies.get("token"),
+      },
       body: JSON.stringify(formValues),
     };
     fetch("/api/eventos/" + formValues._id, requestOptions).then((response) =>
@@ -450,7 +481,7 @@ export function EventosForm() {
 
   return (
     <div className="container mt-5 position-relative">
-      <h1 className="text-center">Vista Creador Noticias</h1>
+      <h1 className="text-center">Eventos</h1>
 
       {/* Tabla que presenta la información obtenida de la base de datos */}
 
@@ -482,10 +513,10 @@ export function EventosForm() {
               <td>{row.nameEventoEng}</td>
               <td>{row.contenidoEsp}</td>
               <td>{row.contenidoEng}</td>
+              
               <td>{row.fechaInicio}</td>
               <td>{row.fechaFin}</td>
               <td>{row.visibilidad ? "Visible" : "No Visible"}</td>
-              <td>{row.img}</td>
               <td>{row.creador}</td>
               <td>
                 <button
@@ -516,7 +547,11 @@ export function EventosForm() {
 
       <button
         className="btn btn-success position-absolute end-0"
-        onClick={() => {showModal(); setEdit(false) ; setFormValues({form:null})}}
+        onClick={() => {
+          showModal();
+          setEdit(false);
+          setFormValues({ form: null });
+        }}
       >
         Agregar
       </button>
@@ -642,7 +677,7 @@ export function EventosForm() {
           />
           <br />
           <label htmlFor="fechaFin" className="label">
-          Fecha_de_cierre
+            Fecha_de_cierre
           </label>
           <input
             className="form-control"

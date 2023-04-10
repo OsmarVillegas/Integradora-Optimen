@@ -27,10 +27,7 @@
   z-index: 800;
 }
 
-.newsAndUpdate-noticias-1,
-.newsAndUpdate-noticias-2,
-.newsAndUpdate-noticias-3,
-.newsAndUpdate-noticias-4 {
+.newsAndUpdate-noticias{
   /* Establece la posición relativa para que los elementos internos sean posicionados relativos a este elemento */
   position: relative;
   /* Establece un borde redondeado del 5% para el elemento */
@@ -114,20 +111,6 @@
   object-fit: cover;
 }
 
-/* Estilo para la segunda noticia. Se establece una imagen de fondo para la tarjeta. */
-.newsAndUpdate-noticias-2 {
-  background-image: url("../../imagenes/noticias/noticiasOptimen-14.jpg");
-}
-
-/* Estilo para la tercera noticia. Se establece una imagen de fondo para la tarjeta. */
-.newsAndUpdate-noticias-3 {
-  background-image: url("../../imagenes/noticias/noticiasOptimen-15.jpg");
-}
-
-/* Estilo para la cuarta noticia. Se establece una imagen de fondo para la tarjeta. */
-.newsAndUpdate-noticias-4 {
-  background-image: url("../../imagenes/noticias/noticiasOptimen-16.jpg");
-}
 /* Estilo para el título de la noticia dentro de las noticias y actualizaciones. */
 .newsAndUpdate-titulo-noticia {
   text-align: left; /* Se alinea el texto a la izquierda */
