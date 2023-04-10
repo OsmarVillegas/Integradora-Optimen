@@ -23,17 +23,17 @@ Desarrollar una página web optimizada que permita a los visitantes conocer acer
 
 ### Modelo usuario
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/ModelUsuarios.png">
+  <img alt="ModelUsuarios" src="../ImagenesModelUsuarios.PNG">
 </picture>
 
 ### Modelo noticias
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/ModeloNoticias.png">
+  <img alt="ModelUsuarios" src="../Imagenes/ModeloNoticias.PNG">
 </picture>
 
 ### Modelo eventos
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/ModeloEventos.png">
+  <img alt="ModelUsuarios" src="../Imagenes/ModeloEventos.PNG">
 </picture>
 
 
@@ -46,12 +46,12 @@ Desarrollar una página web optimizada que permita a los visitantes conocer acer
 
 ### Diagrama creadores de contenido
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/DiagramaUsuario.png">
+  <img alt="ModelUsuarios" src="../Imagenes/DiagramaCreador.png">
 </picture>
 
 ### Diagrama Administradores
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/DiagramaUsuario.png">
+  <img alt="ModelUsuarios" src="../Imagenes/DiagramaAdministrador.png">
 </picture>
 
 ### Instalación
