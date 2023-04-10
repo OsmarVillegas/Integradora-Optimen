@@ -23,7 +23,7 @@ Desarrollar una página web optimizada que permita a los visitantes conocer acer
 
 ### Modelo usuario
 <picture>
-  <img alt="ModelUsuarios" src="../ImagenesModelUsuarios.PNG">
+  <img alt="ModelUsuarios" src="../Imagenes/ModelUsuarios.PNG">
 </picture>
 
 ### Modelo noticias
