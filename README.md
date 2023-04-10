@@ -28,12 +28,12 @@ Desarrollar una página web optimizada que permita a los visitantes conocer acer
 
 ### Modelo noticias
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/ModeloNoticias.PNG">
+  <img alt="ModelNoticias" src="../Imagenes/ModeloNoticias.PNG">
 </picture>
 
 ### Modelo eventos
 <picture>
-  <img alt="ModelUsuarios" src="../Imagenes/ModeloEventos.PNG">
+  <img alt="ModelEvento" src="../Imagenes/ModeloEventos.PNG">
 </picture>
 
 
