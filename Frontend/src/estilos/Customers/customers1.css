@@ -1,0 +1,55 @@
+/* Estilos aplicados a todos los elementos */
+*{
+  padding:0;
+  margin: 0;
+}
+
+/* Estilos aplicados al encabezado */
+.Header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Monserrat', sans-serif;
+}
+
+/* Estilos aplicados al contenido del encabezado */
+.header-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100px; 
+  display: flex;
+  flex-flow: wrap;
+}
+
+/* Estilos aplicados al título del encabezado */
+.header-titulo {
+  font-weight: bold;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 5em;
+  text-align: end;
+}
+
+/* Estilos aplicados a la imagen del encabezado */
+.header-img {
+  width: 100%;
+  min-height: 50%;
+  object-fit: cover;
+  display: flex;
+}
+
+/* Estilos aplicados al contenedor principal de la página */
+.contenedor-principal{
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+    /* Autor: Mario Alberto Rangel Márquez*/

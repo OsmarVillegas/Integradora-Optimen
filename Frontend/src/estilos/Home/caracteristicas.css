@@ -1,0 +1,133 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Selecciona contenedores con la clase "caracteristicas-contenido" */
+.caracteristicas-contenido {
+    /* Establece la posición del contenedor en relación a su posición original */
+    position: relative;
+    /* Establece el diseño flexible con los elementos en línea */
+    display: flex; 
+    /* Establece el texto en el centro horizontal */
+    text-align: center;
+    /* Establece el índice Z en 500 para que aparezca sobre otros elementos */
+    z-index: 500;
+    /* Desplaza el contenedor hacia arriba 150px */
+    top: -150px;
+}
+
+/* Selecciona contenedores con la clase "caracteristicas-cuadros" */
+.caracteristicas-cuadros {
+    /* Agrega un margen superior e inferior de 2em y un margen lateral de 1em */
+    margin: 2em 1em;
+    /* Establece un diseño flexible con los elementos en columna */
+    display: flex;
+    flex-direction: column;
+    /* Justifica los elementos hacia arriba */
+    justify-content: start;
+    /* Centra verticalmente los elementos en su contenedor */
+    align-items: center;
+    /* Establece el borde redondeado de los elementos en un 5% */
+    border-radius: 5%;
+    /* Establece el color de fondo en blanco */
+    background-color: white;
+    /* Establece un ancho mínimo de 20em */
+    min-width: 20em;
+    /* Establece una altura mínima de 20em */
+    min-height: 20em;
+    /* Agrega una sombra a los elementos */
+    box-shadow: 19px 20px 23px -9px rgba(0,0,0,0.92);
+    -webkit-box-shadow: 19px 20px 23px -9px rgba(0,0,0,0.92);
+    -moz-box-shadow: 19px 20px 23px -9px rgba(0,0,0,0.92);
+}
+
+/* Selecciona elementos con la clase "caracteristicas-titulo" */
+.caracteristicas-titulo {
+  /* Agrega un relleno superior del 15% */
+  padding-top: 15%;
+  /* Establece el tamaño de fuente en 220% */
+  font-size: 220%;
+  /* Establece el color de texto en azul */
+  color: #1a40c6;
+}
+
+/* Selecciona elementos con la clase "caracteristicas-texto" */
+.caracteristicas-texto {
+  /* Agrega un margen de 3em arriba y abajo, y 1em a los lados */
+  margin: 3em 1em;
+  /* Establece el tamaño de fuente en 0.9em */
+  font-size: 0.9em;
+  /* Establece la fuente en "Slabo 27px" o una fuente similar */
+  font-family: "Slabo 27px", serif;
+}
+
+/* Selecciona contenedores con la clase "caracteristicas-titulos" */
+.caracteristicas-titulos {
+  /* Establece un diseño flexible para el contenido centrado vertical y horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Establece la altura del contenedor en el 25% */
+  height: 25%;
+  /* Ajusta automáticamente el ancho del contenedor */
+  width: auto;
+}
+
+/* Selecciona elementos con la clase "caracteristicas-imagen" */
+.caracteristicas-imagen {
+  /* Establece la posición superior en 250px desde el borde superior de su contenedor */
+  top: 250px;
+  /* Establece un ancho de 5em para el elemento */
+  width: 5em;
+  /* Establece la altura del elemento de forma automática para mantener la relación de aspecto */
+  height: auto;
+  /* Agrega un margen superior de 2em */
+  margin-top: 2em;
+  /* Agrega un margen inferior del 10% del alto de su contenedor */
+  margin-bottom: 10%;
+}
+
+/* Selecciona contenedores con la clase "caracteristicas-our" */
+.caracteristicas-our {
+  /* Establece un diseño flexible con contenido justificado hacia la izquierda */
+  display: flex;
+  justify-content: start;
+}
+
+/* Selecciona elementos con la clase "text" */
+.text {
+  /* Establece el tamaño de fuente en 3em */
+  font-size: 3em;
+}
+
+/* En el caso de que la anchura de la pantalla legue a 1050px o inferior, se modificara las siguientes clases. */
+@media (max-width: 1050px) {
+  /* Selecciona contenedores con la clase "caracteristicas-contenido" */
+  .caracteristicas-contenido {
+    /* Establece el diseño flexible con los elementos en columna */
+    flex-direction: column;
+    /* Centra verticalmente los elementos en su contenedor */
+    align-items: center;
+    /* Establece el texto en el centro horizontal */
+    text-align: center;
+    /* Establece el índice Z en 500 para que aparezca sobre otros elementos */
+    z-index: 500;
+    /* Desplaza el contenedor hacia arriba 200px */
+    top: -200px;
+  }
+
+  /* Selecciona contenedores con la clase "caracteristicas-cuadros" */
+  .caracteristicas-cuadros {
+    /* Establece un diseño flexible con los elementos en columna */
+    display: flex;
+    flex-direction: column;
+    /* Agrega un margen del 5% a los lados */
+    margin: 5%;
+    /* Centra verticalmente los elementos en su contenedor */
+    align-items: center;
+    /* Establece el borde redondeado de los elementos en un 5% */
+    border-radius: 5%;
+    /* Establece el color de fondo en blanco */
+    background-color: white;
+  }
+}

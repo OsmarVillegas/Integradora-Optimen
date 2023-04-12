@@ -1,0 +1,73 @@
+/* Estilos aplicados al contenedor de clientes */
+.customers-clientes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: #3d64e3;
+}
+
+/* Estilos aplicados al texto dentro del contenedor de clientes */
+.customers-texto{
+  margin: 40px 270px 50px;
+  font-family: 'Montserrat', sans-serif;
+  font: var(--font_8);
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  display:block;
+  justify-content: center;
+  line-height: 1.8em;
+  margin-top: 2em;
+}   
+
+/* Estilos aplicados al contenedor principal */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Estilos aplicados al cuadro de cliente */
+.cuadro {
+  width: 195px;
+  height: 120px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos aplicados al título de la página */
+.titulo-texto1{
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  font-family: 'Arial Black',sans-serif;
+  font-weight: 1000;
+  font-size: 88px;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Estilos aplicados al subtítulo de la página */
+.titulo-texto2{
+  text-align: center;
+  font-family: 'Arial Black',sans-serif;
+  font-weight: 1000;
+  font-size: 64px;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+  /* Autor: Mario Alberto Rangel Márquez*/

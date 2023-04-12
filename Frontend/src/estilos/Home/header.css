@@ -1,0 +1,60 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+/* Vuelve al div principal relativo para acomodar el contenido absoluto. */
+.header-contenido{
+    position: relative;
+}
+
+/* Le otorga a la imagen un valor estatico en la altura para darle formato. */
+.header-img{
+    height: 78vh;
+}
+
+/* Le da formato (tamaño de letra, grosor y color) al titulo, tambien le da un valor absoluto para acomodarlo en el contenedor relativo y posicionar el contenido*/
+.header-titulo-m{
+    position: absolute;
+    font-weight: 450;
+    font-size: 6em;
+    color: white;
+    top: 25px;
+    left: 2.5%;
+}
+
+/* Le da color blanco al contenido, tambien le da un valor absoluto para acomodarlo en el contenedor relativo y posicionar el contenido */
+.header-parrafo{
+    position: absolute;
+    color: white;
+    top: 125px;
+    left: 3%;
+}
+
+
+/* En el caso de que la pantalla llegue a un valor de 800px cambia los valores de las clases definidas */
+@media (max-width: 800px){
+
+    /* vuelve la imagen menos alta, posicióna la imagen a la izquierda */
+    .header-img{
+        height: 55vh;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    /* Modifica el tamaño de la fuente, su grosor y posición */
+    .header-titulo{
+        font-weight: 500;
+        font-size: 4.5em;
+        top: 0;
+    }
+    
+    /* Modifica el tamaño de la fuente y su posición */
+    .header-parrafo{
+        font-size: 1em;
+        top: 100px;
+        left: 5%;
+    }
+
+}
+
+

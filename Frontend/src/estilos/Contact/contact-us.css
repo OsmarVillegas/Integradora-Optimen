@@ -1,0 +1,35 @@
+#titulo {
+  font-size: 25px; /* Tamaño de fuente de 25 píxeles */
+  font-family: "Monserrat", sans-serif; /* Fuente de texto de tipo "Montserrat" o sans-serif (cualquier fuente sin remates) si "Montserrat" no está disponible */
+  font-weight: bold; /* Texto en negrita */
+  color: white; /* Color del texto en blanco */
+}
+
+.Formulario {
+  width: 350px; /* Ancho del formulario de 350 píxeles */
+  margin: 0 0 45px; /* Margen superior e inferior de 0 píxeles y margen derecho e izquierdo de 0 píxeles */
+  overflow: hidden; /* Contenido que sobresale del formulario se oculta */
+  padding: 20px; /* Relleno de 20 píxeles dentro del formulario */
+  background-color: #c7c7c7; /* Color de fondo del formulario en gris */
+  border: 1px solid #c7c7c7; /* Borde de 1 píxel sólido del mismo color gris que el fondo */
+  -webkit-border-radius: 5px; /* Bordes redondeados de 5 píxeles para navegadores webkit (Chrome, Safari) */
+  border-radius: 20px; /* Bordes redondeados de 20 píxeles para otros navegadores */
+  box-shadow: 0px 0px 5px 2px gray; /* Sombra de caja de 5 píxeles de desplazamiento horizontal y vertical, 5 píxeles de difuminado y color gris */
+}
+
+#formBasicCheckbox {
+  display: inline-block; /* Muestra el checkbox en línea con otros elementos */
+}
+
+.mb-3 {
+  font: inherit; /* Usa la fuente heredada por el elemento padre */
+}
+
+.MapOp {
+  margin-right: 20px; /* Margen derecho de 20 píxeles para la clase "MapOp" */
+}
+
+.Contact {
+  margin-top: 30px; /* Margen superior de 30 píxeles para la clase "Contact" */
+}
+/* Autor: Mario Alberto Rangel Márquez*/

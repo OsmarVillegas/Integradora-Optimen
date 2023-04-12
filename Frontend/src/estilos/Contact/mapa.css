@@ -1,0 +1,23 @@
+/* Establece margen y padding cero para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establece el color de fondo y la fuente utilizada para la página web */
+html, body {
+  background-color: #f5f6f7; /* Color de fondo */
+  font-family: 'Montserrat', sans-serif; /* Fuente utilizada */
+}
+
+/* Establece el estilo para el contenedor de contactos */
+.Contacts {
+  margin: 7.79em; /* Margen alrededor del contenedor */
+  display: flex; /* Establece un contenedor de flexbox */
+  flex-wrap: wrap; /* Envuelve los elementos en varias filas */
+  align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  justify-content: center; /* Centra horizontalmente los elementos en el contenedor */
+  text-align: center; /* Establece el texto centrado en los elementos */
+}
+
+/* Autor: Mario Alberto Rangel Márquez*/

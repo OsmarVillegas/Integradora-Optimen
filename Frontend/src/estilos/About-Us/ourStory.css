@@ -1,0 +1,80 @@
+/*
+    Autor: Osmar Israel Villegas Martínez
+*/
+
+.OurStory-contenido {
+    display: flex;
+    align-items: flex-start; /*alinea los elementos al inicio del contenedor*/
+    justify-content: center; /*centra horizontalmente el contenido*/
+    flex-direction: column; /*define la dirección de los elementos en columna*/
+    margin-top: 1em;
+}
+
+.OurStory-cuadro-title {
+    display: flex;
+    align-items: center; /*alinea los elementos verticalmente en el centro*/
+    justify-content: start; /*alinea los elementos horizontalmente al inicio del contenedor*/
+    flex-direction: column; /*define la dirección de los elementos en columna*/
+    color: #1A40C6;
+    font-weight: bold;
+    margin: 1em 1em; /*margen superior e inferior de 1em y margen izquierdo y derecho de 1em*/
+}
+
+.OurStory-cuadro-title-text {
+    font-size: 2.1em; /*tamaño de fuente de 2.1em*/
+}
+
+.OurStory-cuadro-title hr {
+    width: 60vw; /*ancho de la línea de separación de 60% del ancho de la ventana*/
+    border: 1px solid rgb(0, 0, 0); /*estilo de borde sólido de 1px y color negro*/
+}
+
+.OurStory-img{
+    height: 25vh; /*altura de la imagen de 25% del alto de la ventana*/
+    width: 25vw; /*ancho de la imagen de 25% del ancho de la ventana*/
+    margin: 0 2em; /*margen izquierdo y derecho de 2em*/
+}
+
+.OurStory-cuadro {
+    display: flex;
+    flex-direction: column; /* El contenido del cuadro se organiza en columnas */
+    align-items: center; /* El contenido se alinea al centro del cuadro */
+    justify-content: center; /* El contenido se justifica al centro del cuadro */
+    text-align: center; /* El texto se alinea al centro del cuadro */
+}
+
+.OurStory-cuadro-izquierda {
+    margin-top: 1.5em; /* Margen superior de 1.5em */
+    display: flex; /* El contenido de la izquierda se organiza en filas */
+}
+
+.OurStory-cuadro-derecha {
+    margin-top: 3em; /* Margen superior de 3em */
+    margin-bottom: 1.5em; /* Margen inferior de 1.5em */
+    display: flex; /* El contenido de la derecha se organiza en filas */
+}
+
+.OurStory-cuadro-anios {
+    font-size: 1.5em; /* Tamaño de fuente de 1.5em */
+    color: #1A40C6; /* Color de fuente */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.OurStory-cuadro-subtitulo {
+    font-size: 1.5em; /* Tamaño de fuente de 1.5em */
+}
+
+.OurStory-cuadro-descripcion {
+    text-align: start; /* El texto se alinea al inicio del cuadro */
+}
+
+.OurStory-cuadro-suceso {
+    text-align: start; /* Establece el alineamiento del texto a la izquierda */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    font-size: 1.5em; /* Establece el tamaño de la fuente */
+    cursor: pointer; /* Establece el cursor del mouse como puntero para indicar que es clickeable */
+}
+
+.OurStory-cuadro-suceso li {
+    margin-top: 0.2em; /* Establece el margen superior de los elementos li dentro del cuadro */
+}
