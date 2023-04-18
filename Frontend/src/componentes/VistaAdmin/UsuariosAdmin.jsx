@@ -11,12 +11,6 @@ const cookies = new Cookies();
 
 export function FormularioUsuariosAdmin() {
 
-  useEffect(() => {
-    if (cookies.get("token").length < 0) {
-      console.log(cookies.get("token").length < 0)
-      window.location.href = "/login";
-    }
-  }, []);
 
   // Realiza la petición al servidor con la función importada
   const { data } = useFetch("/api/users");
@@ -78,9 +72,10 @@ export function FormularioUsuariosAdmin() {
       },
       body: JSON.stringify(formValues),
     };
-    fetch("/api/noticias/" + formValues._id, requestOptions).then((response) =>
+    fetch("/api/users/" + formValues._id, requestOptions).then((response) =>
       response.json()
-    );
+    )
+    .then((response) => console.log(response));
 
     // Reinicia la pantalla para recargar los valores modificados
     window.location.reload();
@@ -277,7 +272,7 @@ export function FormularioUsuariosAdmin() {
                 <Button
                   variant="primary"
                   onClick={() => {
-                    showModal();
+
                     componentDidEdit();
                   }}
                 >
