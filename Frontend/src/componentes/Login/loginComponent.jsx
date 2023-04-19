@@ -112,11 +112,12 @@ export function Login() {
               required
             />
           </div>
-          
+
+        </form>
+
         <button className="Login-buttonLogin" onClick={() => iniciarSesion()}>
           Log in
         </button>
-        </form>
 
         <div className="Login-footer">
           <p>
