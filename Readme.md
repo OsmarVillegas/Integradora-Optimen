@@ -57,9 +57,9 @@
 Requisitos.
 * Internet 
 * Equipo de computo 
-* Tener instalado React Js
-* Tener instalado Node JS
-* Tener instalado Visual Studio Code 
+* Tener instalado React Js v18.2.0
+* Tener instalado Node JS v19.6.1
+* Tener instalado Visual Studio Code v1.77.3
 
 <!-- Descripción -->
 #### Descripción.
