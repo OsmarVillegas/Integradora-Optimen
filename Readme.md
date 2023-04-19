@@ -70,7 +70,25 @@ El proyecto consiste en la creación de un sitio web sobre Optimen, el sitio web
 
 <!-- Objetivos -->
 #### Objetivos.
-Desarrollar una página web optimizada que permita a los visitantes conocer acerca de optimen, la página contara con una sección que permitirá el acceso a administradores y creadores, los administradores darán privilegios a los usuarios que accedan a esta sección, los creadores de contenido podrán generar, editar, consultar y eliminar noticias y eventos, los cambios se verán reflejados en la página principal en el apartado noticias.
+
+Objetivo general.
+Mejorar la página web de la empresa "Optimen", haciéndola más rápida, dinámica y fácil de usar para los usuarios. Además, se busca agregar una sección de edición de noticias y eventos para el administrador y el editor, con el fin de permitirles actualizar el contenido de la página de manera eficiente y efectiva. El objetivo es crear una experiencia de usuario atractiva y útil para los visitantes de la página, mientras se ofrece una plataforma fácil de usar para la gestión y actualización del contenido de la página por parte del equipo de administración.
+
+
+Objetivos específicos de este proyecto:
+
+-Mejorar el rendimiento de la página web, optimizando el tiempo de carga y aumentando la velocidad de navegación.
+
+-Diseñar una sección de noticias y eventos en la que el administrador y el editor puedan agregar y actualizar contenido de manera sencilla y eficiente.
+
+-Implementar un sistema de autenticación y control de acceso para garantizar que solo el administrador y el editor tengan permiso para editar y publicar contenido en la sección de noticias y eventos.
+
+-Diseñar una interfaz de usuario atractiva y fácil de usar que permita a los visitantes de la página acceder al contenido de noticias y eventos de manera rápida y sencilla.
+
+-Realizar pruebas exhaustivas en la página web y la sección de noticias y eventos para garantizar que todo funcione correctamente y se detecten y corrijan errores antes del lanzamiento.
+
+
+
 
 <!-- Organigrama -->
 #### Organigrama.
