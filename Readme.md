@@ -107,13 +107,16 @@ En ésta sección se indicará los artefactos generados en base a la solución.
 #### Requerimientos.
 
 Funcionales:
+
+
 <img width="443" alt="image" src="https://user-images.githubusercontent.com/48172198/232952225-aa560054-1590-47a7-ad9a-5ca8ae5a61bc.png">
 
 No Funcionales:
+
+
 <img width="443" alt="image" src="https://user-images.githubusercontent.com/48172198/232952319-506d4355-6319-4747-8fc3-a0f68d7970d8.png">
 
 
-![DiagaraUML](https://user-images.githubusercontent.com/105904645/231132751-dc49f55d-5a6c-4f38-ae4e-e025dc1ad2a7.png)
 
 <!-- Diagrama de Casos de Uso -->
 #### Diagrama Casos de Uso.
