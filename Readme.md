@@ -165,8 +165,8 @@ El administrador accede al sitio web e inicia sesión. Si proporciona las creden
 
 *Creador de contenido*
 El creador de contenido accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a la sección para agregar eventos o noticias nuevas. Sin embargo, si el creador de contenido no proporciona las credenciales adecuadas, la autenticación fallará, impidiendo su acceso al sistema y la posibilidad de realizar modificaciones.
+![Actividad2](https://user-images.githubusercontent.com/48172198/233224014-95dd7c60-6a94-4816-8895-00fdb1e61991.png)
 
-![DiagramaCreador](https://user-images.githubusercontent.com/105904645/231144472-f6b87a61-d400-46fb-8765-6d48ab0f188b.png)
 
 *Usuario visitante*
 El usuario visitante busca la página de optimen oficial y da clik sobre ella para entrar, tendrá la opción de navegar sin problemas dentro de la misma y poder abandonar la página.
