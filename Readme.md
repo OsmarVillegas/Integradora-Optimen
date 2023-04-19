@@ -24,7 +24,6 @@
       <a href="#diseño-de-la-solución">Diseño de la Solución</a>
       <ul>
         <li><a href="#modelo-relacional">Modelo Relacional</a></li>
-        <li><a href="#diagrama-de-clases">Diagrama de Clases</a></li>
         <li><a href="#diagrama-de-componentes">Diagrama de Componentes</a></li>
         <li><a href="#diagrama-de-actividadess">Diagrama de Actividades</a></li>
       </ul>
@@ -122,7 +121,8 @@ No Funcionales:
 #### Diagrama Casos de Uso.
 Creador de contenido
 
-![CreadorContenido](https://user-images.githubusercontent.com/105904645/231140687-5b083953-2b1f-4725-8ad0-26dfa692fda0.png)
+![WhatsApp Image 2023-04-18 at 11 26 49 PM](https://user-images.githubusercontent.com/48172198/233217287-c323391e-b74d-4bcc-a36f-c3a023a1b1b5.jpeg)
+
 
 Administrador
 
