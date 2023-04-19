@@ -160,7 +160,8 @@ Colección eventos
 #### Diagrama de actividades
 *Administrador* 
 El administrador accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a diferentes secciones, otorgar y revocar permisos a otros usuarios. Sin embargo, si el administrador no proporciona las credenciales adecuadas, la autenticación fallará y no podrá acceder al sistema como administrador root.
-![DiagramaAdministrador](https://user-images.githubusercontent.com/105904645/231144426-2294758a-b95e-4d6c-920a-2efb93f95d6c.png)
+![Actividad1](https://user-images.githubusercontent.com/48172198/233221285-18074d24-4c1e-461c-9f1d-a70a15fe58a7.png)
+
 
 *Creador de contenido*
 El creador de contenido accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a la sección para agregar eventos o noticias nuevas. Sin embargo, si el creador de contenido no proporciona las credenciales adecuadas, la autenticación fallará, impidiendo su acceso al sistema y la posibilidad de realizar modificaciones.
