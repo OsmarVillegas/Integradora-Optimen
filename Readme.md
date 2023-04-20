@@ -158,20 +158,19 @@ Colección eventos
 
 
 #### Diagrama de actividades
-*Administrador* 
-El administrador accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a diferentes secciones, otorgar y revocar permisos a otros usuarios. Sin embargo, si el administrador no proporciona las credenciales adecuadas, la autenticación fallará y no podrá acceder al sistema como administrador root.
+*Editar Evento* 
+El Creador de contenido quiere editar un evento que sera visible dentro de la pagina web, para ello entra a la pagina, inicia sesión y despues entra al apartado de edicion de eventos.
 ![Actividad1](https://user-images.githubusercontent.com/48172198/233221285-18074d24-4c1e-461c-9f1d-a70a15fe58a7.png)
 
 
-*Creador de contenido*
-El creador de contenido accede al sitio web e inicia sesión. Si proporciona las credenciales correctas, podrá navegar a la sección para agregar eventos o noticias nuevas. Sin embargo, si el creador de contenido no proporciona las credenciales adecuadas, la autenticación fallará, impidiendo su acceso al sistema y la posibilidad de realizar modificaciones.
+*Editar Noticia*
+El Creador de contenido accede al sitio web e inicia sesión. Se dirige a el apartado de edicion de noticias para editar una noticia.
 ![Actividad2](https://user-images.githubusercontent.com/48172198/233224014-95dd7c60-6a94-4816-8895-00fdb1e61991.png)
 
 
-*Usuario visitante*
-El usuario visitante busca la página de optimen oficial y da clik sobre ella para entrar, tendrá la opción de navegar sin problemas dentro de la misma y poder abandonar la página.
-
-![DiagramaCreador](https://user-images.githubusercontent.com/105904645/231144538-939eba5f-8409-460d-a837-be1cda421fd7.png)
+*Editar Usuario*
+El Administrador accede al sitio web e inicia sesión. En la vista adminitrador busca el apartado de edicion de permisos de usuarios.
+![Actividad3](https://user-images.githubusercontent.com/48172198/233225350-6cad1823-015c-46a1-803b-4d36f4ce9063.png)
 
 
 
