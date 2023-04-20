@@ -160,16 +160,22 @@ Colección eventos
 #### Diagrama de actividades
 *Editar Evento* 
 El Creador de contenido quiere editar un evento que sera visible dentro de la pagina web, para ello entra a la pagina, inicia sesión y despues entra al apartado de edicion de eventos.
+
+
 ![Actividad1](https://user-images.githubusercontent.com/48172198/233221285-18074d24-4c1e-461c-9f1d-a70a15fe58a7.png)
 
 
 *Editar Noticia*
 El Creador de contenido accede al sitio web e inicia sesión. Se dirige a el apartado de edicion de noticias para editar una noticia.
+
+
 ![Actividad2](https://user-images.githubusercontent.com/48172198/233224014-95dd7c60-6a94-4816-8895-00fdb1e61991.png)
 
 
 *Editar Usuario*
 El Administrador accede al sitio web e inicia sesión. En la vista adminitrador busca el apartado de edicion de permisos de usuarios.
+
+
 ![Actividad3](https://user-images.githubusercontent.com/48172198/233225350-6cad1823-015c-46a1-803b-4d36f4ce9063.png)
 
 
